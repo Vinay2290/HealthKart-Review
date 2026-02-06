@@ -1,13 +1,32 @@
 # HealthKart NLP System Review
 
-This project is an end-to-end pipeline for natural language processing that forecasts:
+Review of the HealthKart NLP System
 
-The tone of a product review
-- If the user suggests the product ##Tech Stack
+A complete, Dockerized pipeline for Natural Language Processing (NLP) that makes the following predictions:
+
+Product review sentiment (either positive or negative)
+
+Probability of recommendation (Yes/No)
+
+This project, which was created as a HealthKart Data Science Intern assignment, showcases the full machine learning lifecycle, from model training and preprocessing to containerisation and API deployment.
+
+🚀 Features
+Preparing and cleaning text for data review
+Feature extraction using TF-IDF
+
+Models of logistic regression for:
+Classification of sentiment
+Prediction of recommendations
+Real-time inference using the FastAPI REST service
+Completely replicable Dockerized operation
+Project structure that is clear and production-style
+
+Tech Stack:
 Python
-Scikit-learn
+Scikit-learn and Pandas
 FastAPI
-Docker ## Use Docker to run
+The Uvicorn
+Docker
 
 Build: docker build -t healthkart-nlp.
 
